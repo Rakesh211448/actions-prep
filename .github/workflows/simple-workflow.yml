@@ -29,6 +29,14 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
+      - name: Run If condition
+        run: echo this is in if condition
+        if: github.ref == 'refs/heads/main'
+
+      - name: Run If condition
+        run: echo this is in else condition
+        if: github.ref != 'refs/heads/main'
+
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
