@@ -33,7 +33,7 @@ jobs:
         run: echo this is in if condition
         if: github.ref == 'refs/heads/main'
 
-      - name: Run If condition
+      - name: Run else condition
         run: echo this is in else condition
         if: github.ref != 'refs/heads/main'
 
